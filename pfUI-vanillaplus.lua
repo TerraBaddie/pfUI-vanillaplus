@@ -180,9 +180,11 @@ pfUI:RegisterModule("vanillaplus", function()
           elseif effect == L["dyndebuffs"]["Expose Armor"] then
              local _,_,_,_,countEx = GetTalentInfo(1,6)
 			 
-			 -- Exhaustion
-             duration = duration + GetComboPoints()*3
-             duration = duration + (countEx and duration*(countEx*.25) or 0)
+            -- Combo Points
+            duration = duration + GetComboPoints()*3
+            
+            -- Exhaustion
+            duration = duration + (countEx and duration*(countEx*.25) or 0)
 
           -- Total Control for Cheap Shot
           elseif effect == L["dyndebuffs"]["Cheap Shot"]
