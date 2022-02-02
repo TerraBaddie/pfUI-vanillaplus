@@ -68,6 +68,7 @@ pfUI:RegisterModule("vanillaplus", function()
 	pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]["Expose Armor"]={[0]=6.0,}
   end
 
   if pfUI.api.libtotem and pfUI.api.libtotem.totems then -- adjust totem durations
@@ -180,6 +181,7 @@ pfUI:RegisterModule("vanillaplus", function()
              local _,_,_,_,countEx = GetTalentInfo(1,6)
 			 
 			 -- Exhaustion
+             duration = duration + GetComboPoints()*3
              duration = duration + (countEx and duration*(countEx*.25) or 0)
 
           -- Total Control for Cheap Shot
