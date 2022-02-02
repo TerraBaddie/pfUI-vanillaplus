@@ -38,6 +38,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Curse of the Elements']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
 	pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
+  pfUI_locale["enUS"]["debuffs"]['Expose Armor']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
     pfUI_locale["enUS"]["debuffs"]['Ghostly Strike']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Hamstring']={[0]=9.0,}
@@ -68,7 +69,6 @@ pfUI:RegisterModule("vanillaplus", function()
 	pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
-    pfUI_locale["enUS"]["debuffs"]["Expose Armor"]={[0]=6.0,}
   end
 
   if pfUI.api.libtotem and pfUI.api.libtotem.totems then -- adjust totem durations
