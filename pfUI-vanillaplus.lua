@@ -40,6 +40,7 @@ pfUI:RegisterModule("vanillaplus", function()
 	pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
   pfUI_locale["enUS"]["debuffs"]['Expose Armor']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
+    pfUI_locale["enUS"]["debuffs"]['Garrote - Silenced']={[0]=2.0,}
     pfUI_locale["enUS"]["debuffs"]['Ghostly Strike']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Hamstring']={[0]=9.0,}
     pfUI_locale["enUS"]["debuffs"]['Hunter\'s Mark']={[0]=30.0,}
