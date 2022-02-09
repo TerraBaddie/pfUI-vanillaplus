@@ -38,7 +38,9 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Curse of the Elements']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
 	pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
+  pfUI_locale["enUS"]["debuffs"]['Expose Armor']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
+    pfUI_locale["enUS"]["debuffs"]['Garrote - Silenced']={[0]=2.0,}
     pfUI_locale["enUS"]["debuffs"]['Ghostly Strike']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Hamstring']={[0]=9.0,}
     pfUI_locale["enUS"]["debuffs"]['Hunter\'s Mark']={[0]=30.0,}
@@ -179,8 +181,11 @@ pfUI:RegisterModule("vanillaplus", function()
           elseif effect == L["dyndebuffs"]["Expose Armor"] then
              local _,_,_,_,countEx = GetTalentInfo(1,6)
 			 
-			 -- Exhaustion
-             duration = duration + (countEx and duration*(countEx*.25) or 0)
+            -- Combo Points
+            duration = duration + GetComboPoints()*3
+            
+            -- Exhaustion
+            duration = duration + (countEx and duration*(countEx*.25) or 0)
 
           -- Total Control for Cheap Shot
           elseif effect == L["dyndebuffs"]["Cheap Shot"]
