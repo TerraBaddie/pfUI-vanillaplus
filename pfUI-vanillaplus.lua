@@ -1,5 +1,4 @@
 -- TODO: @207, check if permafrost affects other slow affects
---       Check Vindiction position
 
 -- A Module to update pfUI to match vanilla plus server (enUS only)
 -- based on research of @Heroclastus09 and @hawaiisa and @cgoodwin117
@@ -316,7 +315,7 @@ pfUI:RegisterModule("vanillaplus", function()
           
           -- Vindiction
           elseif effect == L["dyndebuffs"]["Vindication"] then
-            local _,_,_,_,countV = GetTalentInfo(2,3)
+            local _,_,_,_,countV = GetTalentInfo(2,10)
             duration = duration + (countV and countV*10 or 0)
           end
 
