@@ -16,7 +16,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["dyndebuffs"]["Entangling Roots"] = "Entangling Roots"
     pfUI_locale["enUS"]["dyndebuffs"]["Expose Armor"] = "Expose Armor"
     pfUI_locale["enUS"]["dyndebuffs"]["Faerie Fire"] = "Faerie Fire"
-	  pfUI_locale["enUS"]["dyndebuffs"]["Garrote"] = "Garrote"
+    pfUI_locale["enUS"]["dyndebuffs"]["Garrote"] = "Garrote"
     pfUI_locale["enUS"]["dyndebuffs"]["Hammer of Justice"] = "Hammer of Justice"
     pfUI_locale["enUS"]["dyndebuffs"]["Hamstring"] = "Hamstring"
     pfUI_locale["enUS"]["dyndebuffs"]["Hibernate"] = "Hibernate"
@@ -38,7 +38,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Curse of Weakness']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Curse of the Elements']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
+    pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
     pfUI_locale["enUS"]["debuffs"]['Expose Armor']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
     pfUI_locale["enUS"]["debuffs"]['Garrote - Silenced']={[0]=2.0,}
@@ -46,7 +46,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Hamstring']={[0]=9.0,}
     pfUI_locale["enUS"]["debuffs"]['Hunter\'s Mark']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Improved Scorpid Sting']={[0]=30.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
+    pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Insect Swarm']={[0]=16.0,}
     pfUI_locale["enUS"]["debuffs"]['Judgement of Light']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Judgement of Wisdom']={[0]=30.0,}
@@ -54,24 +54,24 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
     pfUI_locale["enUS"]["debuffs"]['Kidney Shot']={[0]=1.0,[1]=0.0,[2]=1.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Maim']={[0]=10.0,}
+  pfUI_locale["enUS"]["debuffs"]['Maim']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Mind Flay']={[0]=4.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
+    pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Scatter Shot']={[0]=5.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Sand Blast']={[0]=4.0,}
+    pfUI_locale["enUS"]["debuffs"]['Sand Blast']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Stormstrike']={[0]=10.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Aftershock']={[0]=4.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Flame Shock']={[0]=15.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Winter\'s Chill']={[0]=20.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Shadow Vulnerability']={[0]=20.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=3.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
-	  pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
+    pfUI_locale["enUS"]["debuffs"]['Stormstrike']={[0]=10.0,}
+    pfUI_locale["enUS"]["debuffs"]['Aftershock']={[0]=4.0,}
+    pfUI_locale["enUS"]["debuffs"]['Flame Shock']={[0]=15.0,}
+    pfUI_locale["enUS"]["debuffs"]['Winter\'s Chill']={[0]=20.0,}
+    pfUI_locale["enUS"]["debuffs"]['Shadow Vulnerability']={[0]=20.0,}
+    pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
+    pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=3.0,}
+    pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
+    pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
+    pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
+    pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Vindication']={[0]=0.0,}
@@ -84,7 +84,7 @@ pfUI:RegisterModule("vanillaplus", function()
     libtotem.totems["Spell_Nature_ManaRegenTotem"] = {[-1] = 300}
     libtotem.totems["Spell_Frost_SummonWaterElemental"] = {[-1] = 15}
     libtotem.totems["Spell_Nature_GroundingTotem"] = {[-1] = 40}
-  	libtotem.totems["Spell_Fire_FrostResistanceTotem"] = {[-1] = 120}
+    libtotem.totems["Spell_Fire_FrostResistanceTotem"] = {[-1] = 120}
   end
 
   do -- libcast overwrites
@@ -116,11 +116,11 @@ pfUI:RegisterModule("vanillaplus", function()
         -- reduce duration based on v+ talents
         local duration = 1000
         local _,_,_,_,countSS = GetTalentInfo(2,14)
-		    local _,_,_,_,countMS = GetTalentInfo(3,9)
+        local _,_,_,_,countMS = GetTalentInfo(3,9)
         if countSS then
           duration = duration - countSS*200
         end
-		    if countMS then
+        if countMS then
           duration = duration + countMS*1500
         end
 
@@ -169,7 +169,7 @@ pfUI:RegisterModule("vanillaplus", function()
           elseif effect == L["dyndebuffs"]["Garrote"] then
             local _,_,_,_,countSB = GetTalentInfo(3,13)
 
-			      --Serrated Blades
+            --Serrated Blades
             duration = duration + (countSB and countSB*2 or 0)
 
           -- Kidney Shot
@@ -177,9 +177,9 @@ pfUI:RegisterModule("vanillaplus", function()
             local _,_,_,_,countTC = GetTalentInfo(1,16)
 
             -- Combo Points
-  			    duration = duration + GetComboPoints()*1
+            duration = duration + GetComboPoints()*1
 
-			      -- Total Control
+            -- Total Control
             duration = duration + (countTC and countTC*.5 or 0)
 
           -- Expose Armor
@@ -230,7 +230,7 @@ pfUI:RegisterModule("vanillaplus", function()
             duration = duration + (countISWP and countISWP*3 or 0)
 
           -- Psychic Scream
-  		    elseif effect == L["dyndebuffs"]["Psychic Scream"] then
+          elseif effect == L["dyndebuffs"]["Psychic Scream"] then
             local _,_,_,_,countIPS = GetTalentInfo(3,4)
 
             -- Improved Psychic Scream
@@ -314,7 +314,7 @@ pfUI:RegisterModule("vanillaplus", function()
             duration = duration + (countV and countV*10 or 0)
           end
 
-		    -- SHAMAN
+        -- SHAMAN
         elseif class == "SHAMAN" then
           -- Earths Shock
           if effect == L["dyndebuffs"]["Earth Shock"] then
