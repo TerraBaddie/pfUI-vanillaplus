@@ -54,7 +54,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
     pfUI_locale["enUS"]["debuffs"]['Kidney Shot']={[0]=1.0,[1]=0.0,[2]=1.0,}
-  pfUI_locale["enUS"]["debuffs"]['Maim']={[0]=10.0,}
+    pfUI_locale["enUS"]["debuffs"]['Maim']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Mind Flay']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
