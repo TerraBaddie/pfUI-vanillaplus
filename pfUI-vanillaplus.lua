@@ -1,5 +1,3 @@
--- TODO: @207, check if permafrost affects other slow affects
-
 -- A Module to update pfUI to match vanilla plus server (enUS only)
 -- based on research of @Heroclastus09 and @hawaiisa and @cgoodwin117
 -- https://github.com/Heroclastus09/pfUI @7b190e92656dc76884bdd5f342e064879a2c85c2
@@ -50,10 +48,8 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Improved Scorpid Sting']={[0]=30.0,}
 	  pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Insect Swarm']={[0]=16.0,}
-    pfUI_locale["enUS"]["debuffs"]['Judgement of Justice']={[0]=30.0,},
     pfUI_locale["enUS"]["debuffs"]['Judgement of Light']={[0]=30.0,},
     pfUI_locale["enUS"]["debuffs"]['Judgement of Wisdom']={[0]=30.0,},
-    pfUI_locale["enUS"]["debuffs"]['Judgement of the Crusader']={[0]=30.0,},
     pfUI_locale["enUS"]["debuffs"]['Judgement of Fury']={[0]=4.0,},
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
@@ -313,7 +309,7 @@ pfUI:RegisterModule("vanillaplus", function()
             -- Improved Hammer of Justice
             duration = duration + (countHOJ and countHOJ*.5 or 0)
           
-          -- Vindiction
+          -- Vindiction UNTESTED
           elseif effect == L["dyndebuffs"]["Vindication"] then
             local _,_,_,_,countV = GetTalentInfo(2,10)
             duration = duration + (countV and countV*10 or 0)
