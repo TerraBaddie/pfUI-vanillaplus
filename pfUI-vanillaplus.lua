@@ -48,9 +48,9 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Improved Scorpid Sting']={[0]=30.0,}
 	  pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Insect Swarm']={[0]=16.0,}
-    pfUI_locale["enUS"]["debuffs"]['Judgement of Light']={[0]=30.0,},
-    pfUI_locale["enUS"]["debuffs"]['Judgement of Wisdom']={[0]=30.0,},
-    pfUI_locale["enUS"]["debuffs"]['Judgement of Fury']={[0]=4.0,},
+    pfUI_locale["enUS"]["debuffs"]['Judgement of Light']={[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Judgement of Wisdom']={[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Judgement of Fury']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
     pfUI_locale["enUS"]["debuffs"]['Kidney Shot']={[0]=1.0,[1]=0.0,[2]=1.0,}
@@ -74,8 +74,7 @@ pfUI:RegisterModule("vanillaplus", function()
 	  pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
-    pfUI_locale["enUS"]["debuffs"]['Vindication']={[0]=0.0,},
-
+    pfUI_locale["enUS"]["debuffs"]['Vindication']={[0]=0.0,}
   end
 
   if pfUI.api.libtotem and pfUI.api.libtotem.totems then -- adjust totem durations
