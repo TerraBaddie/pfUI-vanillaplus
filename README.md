@@ -75,7 +75,7 @@ In general, those vanilla+ custom changes are:
 ## Changelog v 0.63
 - corrected pally judgment and vindication debuffs
 - added thunderstomp debuff
-- formatted files(i.e. changed tabs into spaces)
+- formatted files(i.e. changed tabs into spaces, alphabetize lists, etc.)
 
 ## Changelog v 0.62
 - corrected expose armor duration calculation
