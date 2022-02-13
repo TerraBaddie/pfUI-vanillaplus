@@ -2,7 +2,7 @@
 
 An extension for [pfUI](https://github.com/shagu/pfUI) which adds support for the [Vanilla+ Server](https://vanillaplus.org/).
 The latest version of pfUI is required and only enUS-Gameclients are supported at the time.
-The modifications are based on the research of [@Heroclastus09](https://github.com/Heroclastus09/) and [@hawaiisa](https://github.com/hawaiisa/).
+The modifications are based on the research of [@Heroclastus09](https://github.com/Heroclastus09/) and [@hawaiisa](https://github.com/hawaiisa/) and [@cgoodwin117](https://github.com/cgoodwin117).
 Many thanks go to Shagu for enabling this practical module and for his support and advice :)
 
 ## Important Note
@@ -71,6 +71,11 @@ In general, those vanilla+ custom changes are:
 - corrected a few totem durations
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
+
+## Changelog v 0.63
+- corrected pally judgment and vindication debuffs
+- added thunderstomp debuff
+- formatted files(i.e. changed tabs into spaces, alphabetize lists, etc.)
 
 ## Changelog v 0.62
 - corrected expose armor duration calculation
