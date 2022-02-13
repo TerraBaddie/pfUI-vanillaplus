@@ -31,15 +31,17 @@ pfUI:RegisterModule("vanillaplus", function()
   end
 
   do -- adjust spell durations
+    pfUI_locale["enUS"]["debuffs"]['Aftershock']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Challenging Shout']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Concussive Shot']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Curse of Recklessness']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Curse of Shadow']={[0]=60.0,}
-    pfUI_locale["enUS"]["debuffs"]['Curse of Weakness']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Curse of the Elements']={[0]=60.0,}
-    pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Curse of Weakness']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
+    pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Expose Armor']={[0]=6.0,}
+    pfUI_locale["enUS"]["debuffs"]['Flame Shock']={[0]=15.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
     pfUI_locale["enUS"]["debuffs"]['Garrote - Silenced']={[0]=2.0,}
     pfUI_locale["enUS"]["debuffs"]['Ghostly Strike']={[0]=5.0,}
@@ -48,33 +50,32 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Improved Scorpid Sting']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Insect Swarm']={[0]=16.0,}
+    pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
+    pfUI_locale["enUS"]["debuffs"]['Judgement of Fury']={[0]=4.0,} -- UNTESTED
     pfUI_locale["enUS"]["debuffs"]['Judgement of Light']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Judgement of Wisdom']={[0]=30.0,}
-    pfUI_locale["enUS"]["debuffs"]['Judgement of Fury']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Kick - Silenced']={[0]=3.0,}
     pfUI_locale["enUS"]["debuffs"]['Kidney Shot']={[0]=1.0,[1]=0.0,[2]=1.0,}
     pfUI_locale["enUS"]["debuffs"]['Maim']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Mind Flay']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
+    pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
-    pfUI_locale["enUS"]["debuffs"]['Scatter Shot']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Sand Blast']={[0]=4.0,}
+    pfUI_locale["enUS"]["debuffs"]['Scatter Shot']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Scorpid Sting']={[0]=30.0,}
-    pfUI_locale["enUS"]["debuffs"]['Stormstrike']={[0]=10.0,}
-    pfUI_locale["enUS"]["debuffs"]['Aftershock']={[0]=4.0,}
-    pfUI_locale["enUS"]["debuffs"]['Flame Shock']={[0]=15.0,}
-    pfUI_locale["enUS"]["debuffs"]['Winter\'s Chill']={[0]=20.0,}
+    pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Shadow Vulnerability']={[0]=20.0,}
     pfUI_locale["enUS"]["debuffs"]['Shadow Word: Numb']={[0]=3.0,}
     pfUI_locale["enUS"]["debuffs"]['Shock and Awe']={[0]=3.0,}
-    pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
-    pfUI_locale["enUS"]["debuffs"]['Intimidation']={[0]=4.0,}
-    pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
-    pfUI_locale["enUS"]["debuffs"]['Screech']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Starfall Stun']={[0]=4.0,}
+    pfUI_locale["enUS"]["debuffs"]['Stormstrike']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Thunder Clap']={[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Thunderstomp']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Vindication']={[0]=0.0,}
+    pfUI_locale["enUS"]["debuffs"]['Winter\'s Chill']={[0]=20.0,}
+    pfUI_locale["enUS"]["debuffs"]['Wyvern Sting']={[0]=10.0,}
   end
 
   if pfUI.api.libtotem and pfUI.api.libtotem.totems then -- adjust totem durations
@@ -308,7 +309,7 @@ pfUI:RegisterModule("vanillaplus", function()
             -- Improved Hammer of Justice
             duration = duration + (countHOJ and countHOJ*.5 or 0)
           
-          -- Vindiction UNTESTED
+          -- Vindiction
           elseif effect == L["dyndebuffs"]["Vindication"] then
             local _,_,_,_,countV = GetTalentInfo(2,10)
             duration = duration + (countV and countV*10 or 0)
