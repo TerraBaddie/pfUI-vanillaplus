@@ -72,6 +72,11 @@ In general, those vanilla+ custom changes are:
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
 
+## Changelog v 0.63
+- corrected pally judgment and vindication debuffs
+- added thunderstomp debuff
+- formatted files(i.e. changed tabs into spaces)
+
 ## Changelog v 0.62
 - corrected expose armor duration calculation
 - added garrote silence duration
