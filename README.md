@@ -72,6 +72,10 @@ In general, those vanilla+ custom changes are:
 - Earth Shock debuff time should be displayed and affected by Earth Graps Talent
 - added debuff timer for Sand Blast
 
+## Changelog v 0.64
+- updated immolation trap and explosive trap dot duration
+- correctly scale freezing trap with talents
+
 ## Changelog v 0.63
 - corrected pally judgment and vindication debuffs
 - added thunderstomp debuff
