@@ -16,6 +16,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["dyndebuffs"]["Entangling Roots"] = "Entangling Roots"
     pfUI_locale["enUS"]["dyndebuffs"]["Expose Armor"] = "Expose Armor"
     pfUI_locale["enUS"]["dyndebuffs"]["Faerie Fire"] = "Faerie Fire"
+    pfUI_locale["enUS"]["dyndebuffs"]["Freezing Trap Effect"] = "Freezing Trap Effect"
     pfUI_locale["enUS"]["dyndebuffs"]["Garrote"] = "Garrote"
     pfUI_locale["enUS"]["dyndebuffs"]["Hammer of Justice"] = "Hammer of Justice"
     pfUI_locale["enUS"]["dyndebuffs"]["Hamstring"] = "Hamstring"
@@ -40,6 +41,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Curse of Weakness']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Earth Shock']={[0]=2.0,}
     pfUI_locale["enUS"]["debuffs"]['Entangling Roots']={[1]=15.0,[2]=18.0,[3]=21.0,[4]=24.0,[5]=27.0,[6]=30.0,[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Explosive Trap Effect']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Expose Armor']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Flame Shock']={[0]=15.0,}
     pfUI_locale["enUS"]["debuffs"]['Frostbolt']={[1]=3.0,[2]=4.0,[3]=4.0,[4]=5.0,[5]=5.0,[6]=6.0,[7]=6.0,[8]=7.0,[9]=7.0,[10]=7.0,[11]=7.0,[0]=7.0,}
@@ -47,6 +49,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Ghostly Strike']={[0]=5.0,}
     pfUI_locale["enUS"]["debuffs"]['Hamstring']={[0]=9.0,}
     pfUI_locale["enUS"]["debuffs"]['Hunter\'s Mark']={[0]=30.0,}
+    pfUI_locale["enUS"]["debuffs"]['Immolation Trap Effect']={[0]=21.0,}
     pfUI_locale["enUS"]["debuffs"]['Improved Scorpid Sting']={[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Inner Light']={[0]=6.0,}
     pfUI_locale["enUS"]["debuffs"]['Insect Swarm']={[0]=16.0,}
@@ -216,9 +219,17 @@ pfUI:RegisterModule("vanillaplus", function()
           -- Hunter's Mark
           if effect == L["dyndebuffs"]["Hunter\'s Mark"] then
             local _,_,_,_,countIHM = GetTalentInfo(2,1)
-
+            
             -- Improved Hunters Mark
             duration = duration + (countIHM and countIHM*60 or 0)
+          end
+          
+          -- Freezing Trap
+          if effect == L["dyndebuffs"]["Freezing Trap Effect"] then
+            local _,_,_,_,countCT = GetTalentInfo(3,4)
+
+            -- Clever Traps
+            duration = duration + (countCT and duration*(countCT*0.15) or 0)
           end
 
         -- PRIEST
