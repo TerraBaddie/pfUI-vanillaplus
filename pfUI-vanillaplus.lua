@@ -66,6 +66,7 @@ pfUI:RegisterModule("vanillaplus", function()
     pfUI_locale["enUS"]["debuffs"]['Moonfire']={[0]=12.0,}
     pfUI_locale["enUS"]["debuffs"]['Pounce Slow']={[0]=10.0,}
     pfUI_locale["enUS"]["debuffs"]['Rake']={[0]=15.0,}
+    pfUI_locale["enUS"]["debuffs"]['Rend']={[1]=12.0,[2]=15.0,[3]=18.0,[4]=21.0,[5]=24.0,[6]=27.0,[7]=30.0,[0]=30.0,}
     pfUI_locale["enUS"]["debuffs"]['Repentance']={[0]=60.0,}
     pfUI_locale["enUS"]["debuffs"]['Sand Blast']={[0]=4.0,}
     pfUI_locale["enUS"]["debuffs"]['Scare Beast']={[1]=20.0,[2]=25.0,[3]=30.0,[0]=30.0,}
